@@ -41,7 +41,7 @@ ul {
   align-items: center;
   font-size: 1rem;
   padding: 1.25rem;
-  border-bottom: 0.2rem solid rgb(66, 64, 64);
+  border-bottom : 0.2rem solid white;
 }
 
 .nav-brand-logo h1 {
@@ -50,10 +50,16 @@ ul {
 }
 
 .nav-brand-logo img {
+  transition: all 1.5s ease-in;
   display: inline-block;
   vertical-align: middle;
   width: 3.125rem;
   margin-right: 0.5rem;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.nav-brand-logo img:hover{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
 }
 
 .nav-brand-logo {
@@ -349,4 +355,14 @@ footer h2 {
   font-variant: small-caps;
   letter-spacing: 0.1rem;
   font-weight: 400;
+}
+::-webkit-scrollbar {
+  width: 15px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 2%, 21%) ;
+  border-radius: 25px; 
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }

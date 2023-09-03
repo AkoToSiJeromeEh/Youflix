@@ -2,14 +2,102 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;;
+}
+.nav-container {
+    color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1.25rem;
+  background-color: #000000;
+   border-bottom : 0.1rem solid white;
+
+}
+
+.nav-brand-logo h1 {
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+}
+
+.nav-brand-logo .brand-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 3.125rem;
+  margin-right: 0.5rem;
+}
+
+.nav-brand-logo {
+  flex: 1;
+}
+
+.nav-links {
+  background-color: rgba(0, 0, 0, 0.266);
+  backdrop-filter: blur(5px);
+  height: 95vh;
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  padding: 1.25rem;
+  top: 6rem;
+  width: 100%;
+  visibility: hidden;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.85rem;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 1.75rem;
+  font-variant: small-caps;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.nav-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: hsl(348, 85%, 48%);
+  margin-right: 0.9rem;
+}
+
+i {
+  font-size: 1.75rem;
+  color: gray;
+}
+
+.animate__animated.animate__backInRight {
+  --animate-duration: 1.5s;
+  --animation-direction: reverse;
+}
+
+.animate__animated .animate__fadeInLeft,
+.animate__animated .animate__fadeInDown {
+  --animate-duration: 2.5s;
+  --animation-direction: alternate;
+  --animation-timing-function: ease-in;
 }
 .main-tbl {
   outline: auto;
   height: 100vh;
-  width: 100vw;
+
 }
 td {
   width: 50vw;
+  
 }
 .tbl-in {
   display: flex;
@@ -24,18 +112,53 @@ td {
 }
 
 img {
-  width: 20vw;
-  height: 15vw;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  width: 150px;
   border-radius: 1rem;
-  outline: #a80038 2px solid;
+
 }
 .big-img {
   width: 100%;
   height: 30vw;
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 70%, 100% 100%, 0 100%, 0% 70%, 0% 30%);
 }
 body {
-  background-color: #2b2024;
+  background-color: #040404;
 }
 table {
   padding: 2rem;
+}
+caption {
+  text-align: start;
+  padding: 2rem;
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: white;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  padding: 1.55rem;
+  color:white;
+}
+
+footer h2 {
+  font-size: 1.1rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  border: none;
+
+}
+::-webkit-scrollbar {
+  width: 15px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 2%, 21%) ;
+  border-radius: 25px; 
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }

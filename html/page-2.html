@@ -4,63 +4,245 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouFlix</title>
-    <link rel="stylesheet" href="./second-page.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/page-2.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="../icon/icons8-streaming-96.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
+    <div class="nav-container">
+      <div class="nav-brand-logo">
+        <h1 class="animate__animated animate__fadeInLeft">
+          <img src="../icon/icons8-streaming-96.png" alt="" />YouFlix
+        </h1>
+      </div>
+      <div class="nav-tog-cont">
+        <button id="nav-toggler" class="nav-toggler">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+      <div class="nav-links" id="nav-links-id">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house fa-md"></i>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-play fa-md"></i>
+            <a href="../index.html">Videos</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-headphones fa-md"></i>
+            <a href="../html/page-2.html">Music</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-people-line"></i>
+            <a href="../html/page-3.html">Community</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <table>
+      <caption>
+        <i class="fa-solid fa-headphones fa-md"></i>
+        Music Library
+      </caption>
       <tr>
-        <td>
-          <div >
-            <img width="250px" src="./image/1600w-KsRCFSNg4XA.webp" alt="">
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/1600w-KsRCFSNg4XA.webp" alt="" />
           </div>
           <div>
             <h2>FALLING ALBUM</h2>
+              <p>A melancholic journey through love and loss, filled with soulful melodies that tug at the heartstrings.</p>
           </div>
           <div class="audio-1-animation">
             <small>FALLING</small>
-            <audio src="./music/NEFFEX - INSPIRED [Lyrics].mp3" controls></audio>
-        </div>
+            <audio
+              src="../music/NEFFEX - INSPIRED [Lyrics].mp3"
+              controls
+            ></audio>
+          </div>
         </td>
-        <td>
-            <div>
-                <img width="250px" src="./image/canva-pink-and-blue-moon-girl-modern-aesthetic-music-album-cover-Mkm2CDpiiE0.jpg" alt="">
-            </div>
-            <div>
-                <h2>INSPIRED ALBUM</h2>
-            </div>
-            <div class="audio-1-animation">
-                <small>INSPIRED</small>
-                <audio src="./music/Trevor Daniel - Falling (Lyrics).mp3" controls></audio>
-            </div>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img
+              width="300px"
+              src="../image/canva-pink-and-blue-moon-girl-modern-aesthetic-music-album-cover-Mkm2CDpiiE0.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>INSPIRED ALBUM</h2>
+            <p>An eclectic mix of genres and emotions, this album sparks creativity and leaves listeners feeling motivated and empowered.</p>
+          </div>
+          <div class="audio-1-animation">
+            <small>INSPIRED</small>
+            <audio
+              src="../music/Trevor Daniel - Falling (Lyrics).mp3"
+              controls
+            ></audio>
+          </div>
+        </td>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/music-2.webp" alt="" />
+          </div>
+          <div>
+            <h2>PINK MOON ALBUM</h2>
+            <p>Delicate and introspective, this album paints a serene soundscape reminiscent of moonlit nights and quiet contemplation.</p>
+          </div>
+          <div class="audio-1-animation">
+            <small>PINK MOON</small>
+            <audio
+              src="../music/Trevor Daniel - Falling (Lyrics).mp3"
+              controls
+            ></audio>
+          </div>
         </td>
       </tr>
       <tr>
-        <td>
-            <div>
-                <img width="250px" src="./image/glass-sphere-pink-cloud-cd-cover-music-design-template-62cb3f72777fa461bf780f9221f9a85d_screen.jpg" alt="">
-            </div>
-            <div >
-                <h2>GLASS  ALBUM</h2>
-            </div>
-            <div class="audio-1-animation">
-                <small>GLASS</small>
-                <audio src="./music/Glass Animals - Heat Waves.mp3" controls></audio>
-            </div>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img
+              width="300px"
+              src="../image/glass-sphere-pink-cloud-cd-cover-music-design-template-62cb3f72777fa461bf780f9221f9a85d_screen.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>GLASS ALBUM</h2>
+            <p>
+              A sonic exploration of ethereal beauty and fragility, where crystalline melodies and ambient textures collide in harmonious elegance.
+            </p>
+          </div>
+          <div class="audio-1-animation">
+            <small>GLASS</small>
+            <audio
+              src="../music/Glass Animals - Heat Waves.mp3"
+              controls
+            ></audio>
+          </div>
         </td>
-        <td>
-            <div>
-                <img width="250px" src="./image/sphere-glass-the-mixtape-cd-cover-design-template-73ab5b3d9b81f442cb2288630ab63acf.jpg" alt="">
-            </div>
-            <div >
-                <h2>SPHERE  ALBUM</h2>
-            </div>
-            <div class="audio-1-animation">
-                <small>SPHERE</small>
-                <audio src="./music/Creo - Sphere.mp3" controls></audio>
-            </div>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img
+              width="300px"
+              src="../image/sphere-glass-the-mixtape-cd-cover-design-template-73ab5b3d9b81f442cb2288630ab63acf.jpg"
+              alt=""
+            />
+          </div>
+          <div>
+            <h2>SPHERE ALBUM</h2>
+            <p>
+              An otherworldly sonic odyssey that transports listeners to distant realms, where ambient landscapes and pulsating rhythms converge
+            </p>
+          </div>
+          <div class="audio-1-animation">
+            <small>SPHERE</small>
+            <audio src="../music/Creo - Sphere.mp3" controls></audio>
+          </div>
+        </td>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/music-1.webp" alt="" />
+          </div>
+          <div>
+            <h2>PURPLE SKY ALBUM</h2>
+            <p>
+              A musical journey bathed in the hues of twilight, offering dreamy escapism with its lush, atmospheric compositions.
+            </p>
+          </div>
+          <div class="audio-1-animation">
+            <small>PURPLE SKY</small>
+            <audio
+              src="../music/Glass Animals - Heat Waves.mp3"
+              controls
+            ></audio>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/music-3.webp" alt="" />
+          </div>
+          <div>
+            <h2>HEROZ ALONE ALBUM</h2>
+            <p> A solo venture of raw vulnerability, exploring the human experience through honest lyrics and emotive melodies.</p>
+          </div>
+          <div class="audio-1-animation">
+            <small>HEROZ ALONE</small>
+            <audio
+              src="../music/Glass Animals - Heat Waves.mp3"
+              controls
+            ></audio>
+          </div>
+        </td>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/music-4.webp" alt="" />
+          </div>
+          <div>
+            <h2>FEEL BETTER ALBUM</h2>
+            <p> Uplifting and heartwarming, this album is a musical remedy that soothes the soul and brings comfort in times of need.</p>
+          </div>
+          <div class="audio-1-animation">
+            <small>FEEL BETTER </small>
+            <audio
+              src="../music/Glass Animals - Heat Waves.mp3"
+              controls
+            ></audio>
+          </div>
+        </td>
+        <td class="animate__animated animate__zoomInDown">
+          <div>
+            <img width="300px" src="../image/Music-6.jpg" alt="" />
+          </div>
+          <div>
+            <h2>FANTASY DREAM ALBUM</h2>
+            <p>Immerse yourself in a fantastical world of whimsical melodies and surreal lyrics, where dreams and reality intertwine.</p>
+          </div>
+          <div class="audio-1-animation">
+            <small>FANTASY DREAM </small>
+            <audio
+              src="../music/Glass Animals - Heat Waves.mp3"
+              controls
+            ></audio>
+          </div>
         </td>
       </tr>
     </table>
+    <footer>
+      <h2>
+        <i class="fa-regular fa-copyright fa-sm"></i> 2022 YouFlix All Rights Reserved.
+      </h2>
+    </footer>
+    <script src="../js/toggle-nav.js"></script>
   </body>
 </html>
