@@ -1,0 +1,41 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-tbl {
+  outline: auto;
+  height: 100vh;
+  width: 100vw;
+}
+td {
+  width: 50vw;
+}
+.tbl-in {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.top,
+.bot {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+img {
+  width: 20vw;
+  height: 15vw;
+  border-radius: 1rem;
+  outline: #a80038 2px solid;
+}
+.big-img {
+  width: 100%;
+  height: 30vw;
+}
+body {
+  background-color: #2b2024;
+}
+table {
+  padding: 2rem;
+}

@@ -1,0 +1,99 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: #2B2024;
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root, #__next {
+    isolation: isolate;
+  }
+  table{
+    width: 100%;
+    display: grid;
+    place-content: center;
+  }
+  tr{
+    display: flex;
+    gap: 4rem;
+    margin-top: 1.25rem;
+  }
+  img{
+    border-radius: 0.5rem;
+
+  }
+  h2{
+    font-size:1.2rem;
+    font-weight:600;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.5rem;
+    border-bottom: 0.1rem rgb(255, 255, 255) solid;
+  }
+  .audio-1-animation{
+    width: 3.5rem;
+    height: 3.5rem;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    background-color: #FBF9FA;
+    transition: 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .audio-1-animation:hover{
+    clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    width: 100%;
+    border-radius: 0.6rem;
+  }
+  audio{
+    width: 100%;
+    padding: 0.5rem;
+    height: 80%;
+  }
+  audio::-webkit-media-controls-panel {
+    background-color: #56AEFF;
+  }
+  
+  audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+  }
+
+  small {
+    margin-inline: 1.5rem ;
+    color: black;
+    font-weight: bolder;
+  }
+
+
+  
